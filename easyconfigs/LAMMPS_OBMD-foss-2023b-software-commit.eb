@@ -1,7 +1,7 @@
 # The name of the file references the LAMMPS version where the config is compatible with. It may be compatible with other versions but EasyBuild might fail when applying the patches.
 name = 'LAMMPS'
 version = '%(software_commit)s'
-versionsuffix = '-kokkos-dev_OBMD'
+versionsuffix = '-kokkos-OBMD'
 
 homepage = 'https://www.lammps.org'
 description = """LAMMPS is a classical molecular dynamics code, and an acronym
@@ -15,52 +15,46 @@ simulation domain. The code is designed to be easy to modify or extend with new
 functionality.
 """
 
-toolchain = {'name': 'foss', 'version': '2023a'}
+toolchain = {'name': 'foss', 'version': '2023b'}
 toolchainopts = {'openmp': True, 'usempi': True}
 
-# 'https://github.com/lammps/lammps/archive/'
-source_urls = [GITHUB_LOWER_SOURCE]
-sources = ['%(version)s.tar.gz']
-patches = [
-    'LAMMPS-2Aug2023_install_lammps_python_package_in_eb_software_module.patch',
-    'LAMMPS-2Aug2023_lammps_obmd_package.patch',
-    'LAMMPS-2Aug2023_fix-timestep-balance-example.patch',
-]
-checksums = [
-]
+local_release = '%(release_tag)s'
+source_urls = ['https://github.com/chocolatesoup/OBMD-LAMMPS-extension/releases/tag/%(local_release)s']
+sources = ['%(local_release)s.tar.gz']
+start_dir = 'code' # subdirectory containing the actual code
 
 builddependencies = [
-    ('CMake', '3.26.3'),
-    ('pkgconf', '1.9.5'),
-    ('archspec', '0.2.1'),
+    ('CMake', '3.27.6'),
+    ('pkgconf', '2.0.3'),
+    ('archspec', '0.2.2'),
 ]
 dependencies = [
-    ('Python', '3.11.3'),
-    ('libpng', '1.6.39'),
-    ('libjpeg-turbo', '2.1.5.1'),
+    ('Python', '3.11.5'),
+    ('libpng', '1.6.40'),
+    ('libjpeg-turbo', '3.0.1'),
     ('netCDF', '4.9.2'),
     ('GSL', '2.7'),
     ('zlib', '1.2.13'),
-    ('gzip', '1.12'),
-    ('cURL', '8.0.1'),
-    ('HDF5', '1.14.0'),
+    ('gzip', '1.13'),
+    ('cURL', '8.3.0'),
+    ('HDF5', '1.14.3'),
     ('PCRE', '8.45'),
-    ('libxml2', '2.11.4'),
+    ('libxml2', '2.11.5'),
     ('FFmpeg', '6.0'),
     ('Voro++', '0.4.6'),
     ('kim-api', '2.3.0'),
     ('Eigen', '3.4.0'),
-    ('PLUMED', '2.9.0'),
-    ('SciPy-bundle', '2023.07'),
+    ('PLUMED', '2.9.2'),
+    ('SciPy-bundle', '2023.11'),
     # VTK package is auto-disabled if this dep is not available
     ('VTK', '9.3.0'),
     # We use a custom build of MDI
-    ('MDI', '1.4.26'),
+    ('MDI', '1.4.29'),
 ]
 if ARCH == 'x86_64':
     # TBB and ScaFaCos are an optional dependency when building on Intel arch
     dependencies += [
-        ('tbb', '2021.11.0'),
+        ('tbb', '2021.13.0'),
         ('ScaFaCoS', '1.0.4'),
     ]
 
@@ -102,6 +96,7 @@ general_packages = [
 # removing example msst bacause SHOCK package is not enabled
 # removing example pour because GRANULAR package is not enabled
 # removing example voronoi beacuse VORONOI package is not enabled
+
 
 sanity_check_test_inputs = [
      'balance', 'crack', 'friction', 'indent',

@@ -1,5 +1,5 @@
 easyconfigs:
   - LAMMPS_OBMD-foss-2023a-software-commit.eb:
       options:
-        software-commit: 37a3f10fad6e7d8fe2c56c96c4eb0c39b167ec7f # Update LAMMPS to version 22-07-2025
+        software-commit: 0cb72423b8ed2fdf138831c145a3bfb6ea42394e # release stable_2Aug2023
         include-easyblocks-from-commit: 4265f183e98b2d975c961b9764e2af297bbf7893
