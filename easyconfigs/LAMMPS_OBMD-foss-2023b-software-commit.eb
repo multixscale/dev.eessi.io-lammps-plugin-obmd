@@ -1,5 +1,6 @@
 # The name of the file references the LAMMPS version where the config is compatible with. It may be compatible with other versions but EasyBuild might fail when applying the patches.
 name = 'LAMMPS'
+version = '%(software_commit)s'
 versionsuffix = '-kokkos-OBMD'
 
 homepage = 'https://www.lammps.org'
@@ -17,9 +18,9 @@ functionality.
 toolchain = {'name': 'foss', 'version': '2023b'}
 toolchainopts = {'openmp': True, 'usempi': True}
 
-release_tag = '%(release_tag)s'
-source_urls = ['https://github.com/chocolatesoup/OBMD-LAMMPS-extension/releases/tag/%(release_tag)s']
-sources = ['%(release_tag)s.tar.gz']
+local_release_tag = '%(release_tag)s'
+source_urls = ['https://github.com/chocolatesoup/OBMD-LAMMPS-extension/releases/tag/%(local_release_tag)s']
+sources = ['%(local_release_tag)s.tar.gz']
 start_dir = 'code' # subdirectory containing the actual code
 
 builddependencies = [
