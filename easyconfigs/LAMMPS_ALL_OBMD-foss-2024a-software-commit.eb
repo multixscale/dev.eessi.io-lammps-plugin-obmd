@@ -62,7 +62,6 @@ dependencies = [
 if ARCH == 'x86_64':
     # TBB and ScaFaCos are an optional dependency when building on Intel arch
     dependencies += [
-        ('tbb', '2021.13.0'),
         ('ScaFaCoS', '1.0.4'),
     ]
 
