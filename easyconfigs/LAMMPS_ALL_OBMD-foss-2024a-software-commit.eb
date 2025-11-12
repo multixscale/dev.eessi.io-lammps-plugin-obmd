@@ -25,7 +25,7 @@ sources = ['%(version)s.tar.gz']
 
 patches = [
 	'LAMMPS_stable_22Jul2025_update1-lammps-all-obmd_package.patch',
-        'LAMMPS-22Jul2025_update1_install_lammps_python_package_in_eb_software_module.patch',
+    'LAMMPS-22Jul2025_update1_install_lammps_python_package_in_eb_software_module.patch',
 ]
 
 kokkos = False
