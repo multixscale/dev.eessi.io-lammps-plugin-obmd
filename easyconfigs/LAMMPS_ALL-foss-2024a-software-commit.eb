@@ -36,7 +36,6 @@ builddependencies = [
     ('archspec', '0.2.4'),
 ]
 dependencies = [
-    ('CUDA', '12', '', SYSTEM),
     ('Python', '3.12.3'),
     ('libpng', '1.6.43'),
     ('libjpeg-turbo', '3.0.1'),
