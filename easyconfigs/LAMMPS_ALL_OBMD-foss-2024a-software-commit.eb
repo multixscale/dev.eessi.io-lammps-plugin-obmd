@@ -24,7 +24,7 @@ sources = ['%(version)s.tar.gz']
 #start_dir = 'code' # subdirectory containing the actual code
 
 patches = [
-	'LAMMPS_stable_22Jul2025_update1-lammps-all-obmd_package.patch',
+    'LAMMPS_stable_22Jul2025_update1-lammps-all-obmd_package.patch',
     'LAMMPS-22Jul2025_update1_install_lammps_python_package_in_eb_software_module.patch',
 ]
 
@@ -36,7 +36,6 @@ builddependencies = [
     ('archspec', '0.2.4'),
 ]
 dependencies = [
-    ('CUDA', '12', '', SYSTEM),
     ('Python', '3.12.3'),
     ('libpng', '1.6.43'),
     ('libjpeg-turbo', '3.0.1'),
@@ -91,7 +90,6 @@ general_packages = [
     'EXTRA-COMPUTE',
     'EXTRA-DUMP',
     'EXTRA-MOLECULE',
-    'GPU',
     'KSPACE',
     'MOLECULE',
     'GRANULAR',
