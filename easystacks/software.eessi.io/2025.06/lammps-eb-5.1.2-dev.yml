@@ -1,3 +1,4 @@
 easyconfigs:
   - LAMMPS_ALL_OBMD-foss-2024a-software-commit.eb:
+      options:
         software-commit: 26e5f79b4e5aa77b65fc4fbf314b206bf0530b45 # release stable_22Jul2025_update1
