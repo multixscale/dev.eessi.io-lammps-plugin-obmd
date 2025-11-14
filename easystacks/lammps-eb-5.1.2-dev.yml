@@ -1,5 +1,5 @@
 easyconfigs:
   - LAMMPS_OBMD-foss-2023b-software-commit.eb:
       options:
-        software_commit: 421e4a509e984b06719c5771ff2d584b43b01247
-        release-tag: v220725_02
+        software_commit: efdde830c139bcdf4355ca335ee28e3b352b2c34
+        release-tag: v220725_update1
