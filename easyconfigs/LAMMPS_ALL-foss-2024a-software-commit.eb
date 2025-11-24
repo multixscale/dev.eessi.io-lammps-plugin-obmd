@@ -86,6 +86,7 @@ parallel = 8
 # include the following extra packages into the build
 general_packages = [
     'ALLPKG',
+    'EXTRA-COMPUTE',
 ]
 
 # Excluded packages due to requiring additional (non-trivial) deps
