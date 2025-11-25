@@ -24,7 +24,8 @@ sources = ['%(version)s.tar.gz']
 #start_dir = 'code' # subdirectory containing the actual code
 
 patches = [
-    'LAMMPS_stable_22Jul2025_update1-lammps-all-obmd_package.patch',
+    #'LAMMPS_stable_22Jul2025_update1-lammps-all-obmd06112025_package.patch',
+    'LAMMPS_stable_22Jul2025_update1-lammps-all-obmd_08130e9ea1d391342a16c896a9e1400cc6b1180e_package.patch',
     'LAMMPS-22Jul2025_update1_install_lammps_python_package_in_eb_software_module.patch',
 ]
 
