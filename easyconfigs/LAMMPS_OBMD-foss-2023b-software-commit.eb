@@ -18,9 +18,8 @@ functionality.
 toolchain = {'name': 'foss', 'version': '2023b'}
 toolchainopts = {'openmp': True, 'usempi': True}
 
-local_release_tag = 'v220725_update1'
-source_urls = ['https://github.com/chocolatesoup/OBMD-LAMMPS-extension/archive/refs/tags/%(local_release_tag)s']
-sources = ['%(local_release_tag)s.tar.gz']
+source_urls = source_urls = ['https://github.com/chocolatesoup/OBMD-LAMMPS-extension/archive/']
+sources = ['%(version)s.tar.gz']
 start_dir = 'code' # subdirectory containing the actual code
 
 builddependencies = [
