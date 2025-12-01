@@ -21,7 +21,9 @@ toolchainopts = {'openmp': True, 'usempi': True}
 source_urls = source_urls = ['https://github.com/chocolatesoup/OBMD-LAMMPS-extension/archive/']
 sources = ['%(version)s.tar.gz']
 start_dir = 'code' # subdirectory containing the actual code
-
+patches = [
+    'LAMMPS-2Aug2023_install_lammps_python_package_in_eb_software_module.patch',
+]
 builddependencies = [
     ('CMake', '3.27.6'),
     ('pkgconf', '2.0.3'),
