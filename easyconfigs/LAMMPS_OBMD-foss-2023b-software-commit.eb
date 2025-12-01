@@ -21,6 +21,7 @@ toolchainopts = {'openmp': True, 'usempi': True}
 source_urls = source_urls = ['https://github.com/chocolatesoup/OBMD-LAMMPS-extension/archive/']
 sources = ['%(version)s.tar.gz']
 start_dir = 'code' # subdirectory containing the actual code
+
 builddependencies = [
     ('CMake', '3.27.6'),
     ('pkgconf', '2.0.3'),
