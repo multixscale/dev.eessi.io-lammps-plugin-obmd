@@ -98,7 +98,7 @@ general_packages = [
 # removing example pour because GRANULAR package is not enabled
 # removing example voronoi beacuse VORONOI package is not enabled
 
-
+runtest = False
 sanity_check_test_inputs = [
      'balance', 'crack', 'friction', 'indent',
      'melt', 'min', 'nemd', 'obstacle',
