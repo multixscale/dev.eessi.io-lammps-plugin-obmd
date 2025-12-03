@@ -2,4 +2,4 @@ easyconfigs:
   - LAMMPS_OBMD-foss-2023b-software-commit.eb:
       options:
         # See https://github.com/chocolatesoup/OBMD-LAMMPS-extension/releases/tag/v220725_update1
-        software-commit: 52d4e942a6794f9fb40364c33cd7442dd119f793
+        software-commit: 09696d8ee5e00610ab801fb07b82c5936057fd08
