@@ -3,3 +3,4 @@ easyconfigs:
       options:
         # See https://github.com/chocolatesoup/OBMD-LAMMPS-extension/releases/tag/v220725_update1
         software-commit: 09696d8ee5e00610ab801fb07b82c5936057fd08
+        include-easyblocks-from-pr: 4005
