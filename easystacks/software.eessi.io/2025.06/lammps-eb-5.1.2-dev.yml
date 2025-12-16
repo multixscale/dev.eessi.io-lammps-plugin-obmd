@@ -1,4 +1,16 @@
 easyconfigs:
-  - LAMMPS_ALL_OBMD-foss-2024a-software-commit.eb:
-      options:
-        software-commit: 26e5f79b4e5aa77b65fc4fbf314b206bf0530b45 # release stable_22Jul2025_update1
+   - archspec-0.2.5-GCCcore-13.3.0.eb
+   - kim-api-2.4.1-GCC-13.3.0.eb
+   - MDI-1.4.26-gompi-2024a.eb
+   - mpi4py-4.0.1-gompi-2024a.eb
+   - PLUMED-2.9.3-foss-2024a.eb
+   - ScaFaCoS-1.0.4-foss-2024a.eb 
+   - tbb-2021.13.0-GCCcore-13.3.0.eb
+   - Voro++-0.4.6-GCCcore-13.3.0.eb
+   - xxd-9.1.1275-GCCcore-13.3.0.eb
+   - LAMMPS_ALL-foss-2024a-software-commit.eb:
+       options:
+         software-commit: 26e5f79b4e5aa77b65fc4fbf314b206bf0530b45 # release stable_22Jul2025_update1
+   - LAMMPS_ALL_OBMD-foss-2024a-software-commit.eb:
+       options:
+         software-commit: 26e5f79b4e5aa77b65fc4fbf314b206bf0530b45 # release stable_22Jul2025_update1
