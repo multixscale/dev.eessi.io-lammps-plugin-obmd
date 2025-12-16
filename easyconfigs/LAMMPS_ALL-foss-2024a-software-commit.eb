@@ -31,9 +31,9 @@ patches = [
 kokkos = False
 
 builddependencies = [
-    ('CMake', '3.30.3'),
+    ('CMake', '3.29.3'),
     ('pkgconf', '2.2.0'),
-    ('archspec', '0.2.4'),
+    ('archspec', '0.2.5'),
 ]
 dependencies = [
     ('Python', '3.12.3'),
@@ -49,10 +49,10 @@ dependencies = [
     ('libxml2', '2.12.7'),
     ('FFmpeg', '7.0.2'),
     ('Voro++', '0.4.6'),
-    ('kim-api', '2.3.0'),
+    ('kim-api', '2.4.1'),
     ('Eigen', '3.4.0'),
-    ('PLUMED', '2.9.2'),
-    ('SciPy-bundle', '2024.05', '', ('gcccoreflexiblas', '13.3.0-3.4.4')),
+    ('PLUMED', '2.9.3'),
+    ('SciPy-bundle', '2024.05'),
     # VTK package is auto-disabled if this dep is not available
     #('VTK', '9.3.0'),
     # We use a custom build of MDI
